@@ -1,6 +1,6 @@
 {
   "name": "OfferWing",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "OfferWing - 无需准备，轻松拿到offer",
   "scripts": {
     "dev": "ice start --speedup --no-open",
