@@ -68,6 +68,10 @@ jobs:
           APPLE_API_KEY: ${{ secrets.APPLE_API_KEY }}
           APPLE_API_KEY_PATH: ${{ github.workspace }}/${{ secrets.APPLE_API_KEY_PATH }}
 
+      - name: Rename IPA file
+        run: |
+          mv ${{env.IPA_FILE_PATH}}/OfferWing.ipa ${{env.IPA_FILE_PATH}}/OfferWing-${{ steps.get-package-version.outputs.PACKAGE_VERSION }}.ipa
+
       - name: Upload IPA To App Store
         run: |
           xcrun altool --upload-app -f ${{env.IPA_FILE_PATH}}/OfferWing-${{ steps.get-package-version.outputs.PACKAGE_VERSION }}.ipa -t ios --apiKey ${{ secrets.APPLE_API_KEY }} --apiIssuer ${{ secrets.APPLE_API_ISSUER }}
