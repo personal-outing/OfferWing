@@ -1,9 +1,8 @@
 {
   "name": "OfferWing",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "OfferWing - 无需准备，轻松拿到offer",
   "scripts": {
-    "release": "release-it",
     "dev": "ice start --speedup --no-open",
     "start": "ice start --speedup",
     "prebuild": "node ./generateVersion.js",
@@ -13,6 +12,7 @@
     "stylelint": "stylelint \"src/**/*.{css,scss,less}\" --cache",
     "stylelint:fix": "npm run stylelint -- --fix",
     "tauri": "tauri",
+    "release": "bumpp -y --all",
     "dev:ios": "tauri ios dev 'iPhone 16'",
     "dev:android": "tauri android dev",
     "build:android": "tauri android build --apk",
@@ -76,6 +76,7 @@
     "@types/node": "^18.11.17",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "bumpp": "^10.1.0",
     "chokidar": "^3.6.0",
     "eslint": "^8.35.0",
     "release-it": "^16.2.1",
