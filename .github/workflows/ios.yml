@@ -1,0 +1,83 @@
+name: Build IOS IPA
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  check-commit-message:
+    name: Check commit message should release
+    runs-on: ubuntu-latest
+    outputs:
+      should_release: ${{ steps.check_message.outputs.result }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Check commit message
+        id: check_message
+        uses: actions/github-script@v7
+        with:
+          result-encoding: string
+          script: |
+            return /chore:\s*release\s*v\d+\.\d+\.\d+/.test(context.payload.head_commit.message);
+
+  release-ios:
+    permissions:
+      contents: write
+    runs-on: 'macos-latest'
+    needs: check-commit-message
+    if: ${{ needs.check-commit-message.outputs.should_release == 'true' }}
+    env:
+      IPA_FILE_PATH: ${{ github.workspace }}/src-tauri/gen/apple/build/arm64
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - uses: pnpm/action-setup@v4
+        name: Setup pnpm
+        with:
+          version: 9
+          run_install: true
+
+      - name: Get package version
+        id: get-package-version
+        run: echo "PACKAGE_VERSION=$(jq -r '.version' package.json)" >> $GITHUB_OUTPUT
+
+      - name: install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim
+
+      - name: Rust cache
+        uses: swatinem/rust-cache@v2
+        with:
+          workspaces: './src-tauri -> target'
+
+      - name: Build IOS IPA
+        run: pnpm tauri ios build --export-method app-store-connect
+        env:
+          APPLE_API_ISSUER: ${{ secrets.APPLE_API_ISSUER }}
+          APPLE_API_KEY: ${{ secrets.APPLE_API_KEY }}
+          APPLE_API_KEY_PATH: ${{ github.workspace }}/${{ secrets.APPLE_API_KEY_PATH }}
+
+      - name: Upload IPA To App Store
+        run: |
+          xcrun altool --upload-app -f ${{env.IPA_FILE_PATH}}/OfferWing-${{ steps.get-package-version.outputs.PACKAGE_VERSION }}.ipa -t ios --apiKey ${{ secrets.APPLE_API_KEY }} --apiIssuer ${{ secrets.APPLE_API_ISSUER }}
+
+      - name: Publish
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: false
+          name: 'OfferWing v${{ steps.get-package-version.outputs.PACKAGE_VERSION }}'
+          tag_name: v${{ steps.get-package-version.outputs.PACKAGE_VERSION }}
+          generate_release_notes: true
+          make_latest: true
+          files: ${{env.IPA_FILE_PATH}}/OfferWing-${{ steps.get-package-version.outputs.PACKAGE_VERSION }}.ipa
