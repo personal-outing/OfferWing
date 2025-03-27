@@ -1,1 +1,1 @@
-window.packageVersion = '1.2.5'
+window.packageVersion = '1.2.6'

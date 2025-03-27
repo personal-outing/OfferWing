@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
-import { definePageConfig, history, useSearchParams } from "ice";
-import { message, Alert, Button, Tabs, Modal, Input } from "antd";
+import { sendLog } from "@/services/meeting";
+import { login, sendVerifyCode } from "@/services/user";
+import store from "@/store";
+import { getAllUrlParams, getLink, paramsStr } from "@/utils";
 import { LockOutlined, MailOutlined, MobileOutlined } from "@ant-design/icons";
 import {
-  ProFormText,
   LoginForm,
   ProFormCaptcha,
   ProFormCheckbox,
+  ProFormText,
 } from "@ant-design/pro-form";
+import { Alert, Input, message, Tabs } from "antd";
+import { definePageConfig, useSearchParams } from "ice";
+import React, { useEffect, useState } from "react";
 import styles from "./index.module.css";
-import { login, sendVerifyCode } from "@/services/user";
-import store from "@/store";
-import { sendLog } from "@/services/meeting";
-import { getAllUrlParams, getLink, paramsStr, toUrl } from "@/utils";
 
 const LoginMessage: React.FC<{
   content: string;
@@ -219,16 +219,8 @@ const Login: React.FC = () => {
         }}
         id="captcha-box"
       ></div>
-      {/* <Alert
-        style={{ marginBottom: "10px", textAlign: "center" }}
-        message={
-          <span>
-            公告：系统维护三个小时，维护后会正常开放，具体可联系管理员！
-          </span>
-        }
-        type="warning"
-      /> */}
       <LoginForm
+        style={{paddingTop:0}}
         title={
           <img
             style={{
@@ -425,9 +417,6 @@ const Login: React.FC = () => {
           </ProFormCheckbox>
         </div>
       </LoginForm>
-      <p className={styles.footer}>
-        <a onClick={() => toUrl(`/`)}>返回首页</a>
-      </p>
     </div>
   );
 };

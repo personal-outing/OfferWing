@@ -62,7 +62,7 @@ jobs:
           workspaces: './src-tauri -> target'
 
       - name: Build IOS IPA
-        run: pnpm tauri ios build --export-method app-store-connect
+        run: pnpm build:ios
         env:
           APPLE_API_ISSUER: ${{ secrets.APPLE_API_ISSUER }}
           APPLE_API_KEY: ${{ secrets.APPLE_API_KEY }}

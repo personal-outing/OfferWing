@@ -16,6 +16,7 @@
     "dev:ios": "tauri ios dev 'iPhone 16'",
     "dev:android": "tauri android dev",
     "build:android": "tauri android build --apk",
+    "build:ios": "pnpm tauri ios build --export-method app-store-connect",
     "android:sign": "keytool -genkey -v -keystore ./offerWing.jks -keyalg RSA -keysize 2048 -validity 10000 -alias offerWing"
   },
   "dependencies": {

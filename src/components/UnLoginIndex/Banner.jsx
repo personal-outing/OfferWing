@@ -1,10 +1,10 @@
-import { useEffect, useMemo, useState, useCallback } from "react";
-import { Button } from "antd";
-import LoginModal from "../LoginModal";
-import { toUrl } from "../../utils/index";
-import { sendLog } from "../../services/meeting";
-import "./index.css";
 import { useSearchParams } from "@ice/runtime";
+import { Button } from "antd";
+import { useCallback, useMemo, useState } from "react";
+import { sendLog } from "../../services/meeting";
+import { toUrl } from "../../utils/index";
+import LoginModal from "../LoginModal";
+import "./index.css";
 import styles from "./index.module.css";
 
 const featuresList = [
@@ -64,9 +64,9 @@ const videoList = [
   "//player.bilibili.com/player.html?isOutside=true&aid=113497362993053&bvid=BV1oXU6YzENr&cid=26806256849&p=1&autoplay=0",
 ];
 const wxVideoList = [
-  "http://interview.yitongshen.cn/public/newVersion/%E9%9D%A2%E8%AF%95%E7%8B%97%E5%AE%A3%E5%8F%912.mov",
-  "http://interview.yitongshen.cn/public/newVersion/%E5%8F%8C%E5%B1%8FAI%E9%9D%A2%E8%AF%95%E8%BE%85%E5%8A%A9%E5%AE%9E%E6%88%98.mp4",
-  "http://interview.yitongshen.cn/public/newVersion/9%E6%9C%889%E6%97%A52.mp4?",
+  "//interview.yitongshen.cn/public/newVersion/%E9%9D%A2%E8%AF%95%E7%8B%97%E5%AE%A3%E5%8F%912.mov",
+  "//interview.yitongshen.cn/public/newVersion/%E5%8F%8C%E5%B1%8FAI%E9%9D%A2%E8%AF%95%E8%BE%85%E5%8A%A9%E5%AE%9E%E6%88%98.mp4",
+  "//interview.yitongshen.cn/public/newVersion/9%E6%9C%889%E6%97%A52.mp4?",
 ];
 
 const meetingSoftwareList = {
