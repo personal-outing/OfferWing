@@ -1,0 +1,30 @@
+.messageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+  overflow: hidden;
+
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+}
+.messageItemBox {
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+
+  .messageItemLabel {
+    width: 100px;
+    line-height: 30px;
+    text-align: right;
+    font-weight: bold;
+  }
+
+  .messageItemContent {
+    flex: 1;
+    text-align: left;
+  }
+}

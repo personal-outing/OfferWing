@@ -1,0 +1,59 @@
+.groupBox {
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+}
+.company {
+  text-align: center;
+  background-color: #f0f2f5;
+  margin-bottom: -20px;
+  padding-top: 20px;
+  z-index: 999;
+}
+.groupItem {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+
+  img {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .groupBox {
+    margin-top: 0;
+
+    p {
+      font-size: 32rpx;
+      color: #000000;
+      line-height: 36rpx;
+      margin-bottom: 32rpx;
+    }
+  }
+
+  .groupItem {
+    max-width: 100%;
+    div {
+      margin: 0 16rpx;
+    }
+    img {
+      width: auto;
+      height: 176rpx;
+    }
+  }
+}
+.copyright {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}

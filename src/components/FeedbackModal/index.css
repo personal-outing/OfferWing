@@ -1,0 +1,19 @@
+.feedbackModal {
+  .ant-modal-content {
+    border-radius: 10px;
+  }
+}
+.rateBox {
+  div {
+    height: 25rpx;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .rateBox {
+    div {
+      height: 25rpx;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.helpIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  right: 15px;
+  top: 50%;
+  z-index: 999;
+  box-shadow: 2px 2px 4px #ccc;
+  opacity: 0.8;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+.helpTitle {
+  width: 80px;
+  text-align: right;
+  position: absolute;
+  right: 1px;
+  top: 40px;
+  font-weight: bold;
+}
+.chatBox {
+  display: none;
+  margin-left: -70px;
+}
+.helpIcon:hover {
+  opacity: 1;
+}
+.helpIcon:hover .chatBox {
+  display: block;
+  opacity: 1;
+}
+.helpIcon:hover .helpTitle {
+  display: none;
+}
+.imgShow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #000000ab;
+  text-align: center;
+  line-height: 100%;
+  color: #fff;
+}
+.imgShowDes {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #fff;
+}
+.showImg {
+  width: 80%;
+}

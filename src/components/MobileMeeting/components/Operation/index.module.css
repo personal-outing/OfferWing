@@ -1,0 +1,319 @@
+@media screen and (max-width: 750px) {
+  .subContainer {
+    overflow: hidden;
+    transition: height 1s;
+  }
+  .dealBox {
+    transition: 0.5s height;
+    padding-bottom: 30rpx;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .openBtn {
+    width: 100%;
+    text-align: center;
+    height: 30rpx;
+
+    img {
+      margin: -10rpx auto 0;
+      width: 55rpx;
+    }
+  }
+  .btnBoxs {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btnBox {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .startBtn {
+    display: block;
+    height: 80rpx !important;
+    margin: 20rpx auto 0rpx;
+  }
+
+  .meetingBtn {
+    width: 100%;
+    height: 80rpx !important;
+    margin-bottom: 20rpx;
+  }
+
+  .btnContainer {
+    width: 300rpx;
+    padding: 15rpx;
+    margin-top: 3px;
+    border-right: 1rpx solid #ddd;
+  }
+
+  .actionTips {
+    flex: 1;
+    padding: 10rpx;
+  }
+
+  .interruptBtn {
+    width: 80%;
+    height: 100rpx !important;
+    margin: 50rpx 40rpx;
+    font-size: 16px;
+    background-color: #094f84 !important;
+    border: none !important;
+  }
+
+  .iconBox {
+    position: fixed;
+    right: 10rpx;
+    z-index: 999;
+    background-color: #fff;
+
+    span {
+      color: #8a8989;
+      font-weight: bold;
+    }
+  }
+
+  .openIcon {
+    font-size: 40rpx;
+  }
+
+  .fullScreen {
+    width: 100%;
+    height: 400rpx;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0rpx 15rpx;
+  }
+
+  .talkingBox {
+    flex: 1;
+    overflow: auto;
+    padding-bottom: 20rpx;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px 0;
+  }
+
+  .talkingBoxItem {
+    margin-bottom: 20rpx;
+    border-bottom: 1px solid #eee;
+  }
+
+  .fullScreenText {
+    padding: 20rpx;
+    margin-bottom: 0;
+    text-align: center;
+
+    img {
+      width: 30rpx;
+      height: 30rpx;
+    }
+  }
+
+  .toQuestion {
+    text-align: right;
+    border-radius: 80rpx;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .dealBtn {
+    position: fixed;
+    right: 20rpx;
+    bottom: 400rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    opacity: 0.6;
+    z-index: 9999;
+  }
+  .dealBtnItem {
+    width: 120rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 22rpx;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #fff;
+  }
+}
+@media screen and (min-width: 750px) {
+  .subContainer {
+    overflow: hidden;
+    transition: height 1s;
+  }
+
+  .dealBox {
+    transition: 0.5s height;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 15px;
+  }
+
+  .openBtn {
+    width: 100%;
+    text-align: center;
+    height: 30px;
+
+    img {
+      margin: -10px auto 0;
+      width: 35px;
+    }
+  }
+
+  .btnBox {
+    width: 350px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .meetingBtn {
+    width: 100%;
+    margin: 0 0 10rpx;
+  }
+
+  .interruptBtn {
+    width: 100%;
+    height: 60px !important;
+    margin-top: 10px;
+    background-color: #094f84 !important;
+    border: none !important;
+  }
+
+  .btnBoxs {
+    margin: 10px auto 0;
+  }
+
+  .startBtn {
+    font-size: 16px;
+    display: block;
+    margin: 0px 10px 10px;
+  }
+
+  .iconBox {
+    position: fixed;
+    right: 10px;
+    z-index: 999;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+
+    span {
+      color: #8a8989;
+      font-weight: bold;
+    }
+  }
+
+  .openIcon {
+    font-size: 25px;
+  }
+
+  .fullScreen {
+    width: 100%;
+    height: 240px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+
+  .talkingBox {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    flex: 1;
+    overflow: auto;
+    padding-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+
+  .talkingBoxItem {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .fullScreenText {
+    padding: 10px;
+    margin-bottom: 0;
+    text-align: center;
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .toQuestion {
+    text-align: right;
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+.talkingItemBox {
+  width: 90%;
+  margin: 15px auto 0;
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+}
+
+.talkingItem {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 5px;
+  margin: 0;
+  flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #e6e6e6;
+  border-radius: 14px;
+}
+
+.inputBox {
+  display: flex;
+  width: 95%;
+  margin: 5rpx auto 10rpx;
+
+  input {
+    caret-color: #aaa;
+  }
+}
+.inputItem {
+  height: 40rpx;
+  border-radius: 20rpx !important;
+  font-size: 14px;
+}
+.inputBtn {
+  height: 40rpx !important;
+  border-radius: 20rpx !important;
+  margin-left: 5rpx;
+  font-size: 12px !important;
+  text-align: center;
+  padding: 0 10rpx !important;
+  line-height: 40rpx;
+}
+.voiceBtn {
+  display: flex;
+  justify-content: center;
+  border: 2px solid rgb(93,165,248);
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+
+  img {
+    width: 50rpx;
+  }
+}

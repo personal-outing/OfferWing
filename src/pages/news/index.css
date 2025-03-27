@@ -1,0 +1,13 @@
+.newsBox {
+  padding: 10px;
+  margin-bottom: 0;
+
+  &-h {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  &-content {
+    margin-top: 10px;
+  }
+}

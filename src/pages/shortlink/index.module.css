@@ -1,0 +1,76 @@
+.container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 500px;
+  margin: 16px auto;
+  min-height: 200px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+
+.linkDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  background: linear-gradient(to right, #f8f9fa, #f1f3f5);
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.linkDisplay:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.linkGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.linkGroup:hover {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.linkLabel {
+  white-space: nowrap;
+  color: #666;
+  font-size: 15px;
+  font-weight: 500;
+  color: #495057;
+}
+
+@media screen and (max-width: 768px) {
+  .buttonGroup {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+  }
+  
+  .buttonGroup button {
+    flex: 1;
+  }
+  
+  .linkLabel {
+    display: block;
+    margin-bottom: 8px;
+  }
+} 

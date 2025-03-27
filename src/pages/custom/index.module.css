@@ -1,0 +1,79 @@
+@media screen and (max-width: 750px) {
+  .paySelf2 {
+    width: 570rpx;
+    padding: 15px 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 1px solid rgb(177, 195, 204);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+  }
+  .payBtn {
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    border: 0;
+    background: linear-gradient(90deg, #f39555 0%, #fcba2d 100%);
+    border-radius: 6px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .payBtn {
+    width: 80%;
+    height: 38px;
+    cursor: pointer;
+    line-height: 38px;
+    border: 0 !important;
+    background: linear-gradient(90deg, #f39555 0%, #fcba2d 100%);
+    border-radius: 4px !important;
+    color: #fff;
+  }
+  .payInput {
+    margin-bottom: 18px;
+  }
+
+  .payInput input {
+    width: 60px !important;
+    text-align: center;
+    font-weight: bold;
+  }
+  .paySelf2 {
+    width: 540rpx;
+    min-height: 290px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 25px;
+    overflow: hidden;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 1px 38px 0px rgba(0, 0, 0, 0.1);
+
+    p {
+      margin-bottom: 5px;
+    }
+  }
+}
+.paySelf-numtips {
+  color: rgb(255, 153, 0);
+}
+.paySelf-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #222;
+}

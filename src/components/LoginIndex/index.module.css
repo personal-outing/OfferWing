@@ -1,0 +1,351 @@
+.newUserImg {
+  width: 100%;
+  margin-top: -2px;
+  margin-bottom: 20px;
+}
+
+.cardContainer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mainFeatures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.featureCard {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  :global(.ant-card-body) {
+    padding-bottom: 0px;
+  }
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+}
+
+.featureContent {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featureInfo h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #323232;
+}
+
+.featureInfo p {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.featureDesc {
+  color: #1197FF !important;
+  font-weight: 500;
+}
+
+.featureButton {
+  height: 48px;
+  padding: 0 32px;
+  font-size: 16px;
+  border-radius: 24px;
+  border: 0;
+  background: linear-gradient(90deg, #02bdf5 3%, #2e3fc5 96%);
+}
+
+.secondaryFeatures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.quickLinks {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.quickLinks :global(.ant-card-body) {
+  padding: 20px;
+}
+
+.quickLinksGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding-top: 20px;
+}
+
+.quickLinks .quickLinksButton {
+  height: 48px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #323232;
+  border: 1px solid #e8e8e8;
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftCardBox {
+  flex: 1;
+}
+
+.normalCard {
+  background-color: #fbfbfb;
+  border: none;
+  margin: 0 16px 15px;
+}
+
+.cardParagraph {
+  padding-top: 10px;
+  border-bottom: 1px solid #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newMeetingButton,
+.newWritingButton,
+.extraButton {
+  font-size: 12px;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.newMeetingButton {
+  background-color: #323232;
+}
+
+.newMeetingButton:hover {
+  background-color: #323232 !important;
+  border-color: #ccc !important;
+  box-shadow: 1px 1px 4px #ccc;
+}
+
+.newWritingButton {
+  background: linear-gradient(90deg, #02bdf5 3%, #2e3fc5 96%);
+}
+
+.extraButton {
+  color: #333;
+  border: 1px solid #333;
+}
+
+.rightTopCardBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.smallCardLink {
+  font-size: 12px;
+  color: #999;
+  display: flex;
+  align-items: center;
+}
+
+.smallCardLink img {
+  width: 12px;
+}
+
+.count {
+  color: #1197ff;
+}
+
+.rightNewsCardBox {
+  background-color: #fbfbfb;
+  border: none;
+  margin-top: 16px;
+}
+
+.rightNewsCardUl {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  padding-top: 20px;
+}
+
+.rightNewsCardUl li {
+  min-height: 54px;
+  font-size: 12px;
+  border-bottom: 1px solid #f3f6fd;
+  padding: 7px 15px;
+  transition: all 0.3s;
+}
+
+.rightNewsCardUl li:hover {
+  color: #f39555;
+  background-color: rgb(244, 246, 252);
+}
+
+.rightNewsCardUl li p {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightNewsCardUl li p span {
+  width: 60px;
+  text-align: right;
+}
+
+.newsDate {
+  color: #999;
+}
+
+.balanceSection {
+  margin: 10px 20px 0;
+  padding: 15px 24px;
+  background: linear-gradient(135deg, #4B89DC, #345D9D);
+  border-radius: 12px;
+  color: white;
+}
+
+.balanceInfo {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.buttonGroup {
+  margin-left: auto;
+  display: flex;
+  gap: 12px;
+}
+
+.balanceItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.balanceLabel {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.balanceValue {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.separator {
+  width: 1px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.rechargeButton {
+  position: relative;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 20px;
+  background: #FF6B6B;
+  color: white;
+  border: none;
+  font-weight: 500;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rechargeButton:hover {
+  background: #FF5252 !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+.inviteButton {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.inviteButton:hover {
+  background: rgba(255, 255, 255, 0.3) !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 768px) {
+  .balanceSection {
+    padding: 12px 16px;
+    margin: 0 12px;
+  }
+
+  .balanceInfo {
+    gap: 16px;
+  }
+
+  .balanceValue {
+    font-size: 16px;
+  }
+
+  .balanceLabel {
+    font-size: 12px;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .rechargeButton {
+    height: 36px;
+    font-size: 13px;
+    padding: 0 16px;
+  }
+
+  .featureContent {
+    padding: 16px;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .featureInfo h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .featureInfo p {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  .featureButton {
+    width: 100%;
+    height: 40px;
+    padding: 0 16px;
+    font-size: 14px;
+  }
+
+  .quickLinksButton {
+    height: 40px;
+    font-size: 13px;
+  }
+
+  .cardContainer {
+    padding: 12px;
+    gap: 12px;
+  }
+}

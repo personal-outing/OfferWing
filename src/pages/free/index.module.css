@@ -1,0 +1,219 @@
+@media screen and (max-width: 750px) {
+  .chatContainer {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .chatBox {
+    background-color: #eaeaea;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 60rpx;
+  }
+  .chatsContainer {
+    height: 100%;
+    overflow-y: auto;
+  }
+  .talkContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rpx;
+    padding: 0 5rpx;
+  }
+  .head {
+    width: 80rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    margin: 20rpx 10rpx;
+  }
+  .content {
+    width: 100%;
+    min-height: 42rpx;
+    padding: 18rpx 16rpx 16rpx;
+    background-color: #dbe2ef;
+    border-radius: 15rpx;
+    overflow: hidden;
+    margin: 20rpx 10rpx;
+    flex: 1;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .ansContent {
+    width: 100%;
+    padding: 16rpx 16rpx 0rpx;
+    background-color: #fff;
+    border-radius: 15rpx;
+    overflow: hidden;
+    margin: 20rpx 10rpx;
+    flex: 1;
+    font-size: 15px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .highlight code {
+    white-space: pre-wrap !important;
+  }
+
+  .tips {
+    width: 100%;
+    text-align: center;
+    font-size: 26rpx;
+  }
+
+  .status {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1rpx solid #e3e3e3;
+
+    img {
+      width: 50rpx;
+      height: 50rpx;
+    }
+
+    span {
+      color: #f37777;
+      margin: 0 20rpx;
+    }
+  }
+
+  .tipsBox {
+    margin: 20rpx;
+  }
+}
+@media screen and (min-width: 750px) {
+  .chatContainer {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .chatBox {
+    background-color: #eaeaea;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 40px;
+  }
+  .chatsContainer {
+    height: 100%;
+    overflow-y: auto;
+  }
+  .talkContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding: 0 12px;
+  }
+  .head {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    margin: 20px 10px;
+  }
+  .content {
+    width: 100%;
+    background-color: #dbe2ef;
+    border-radius: 15px;
+    padding: 10px;
+    overflow: hidden;
+    margin: 20px 10px;
+    flex: 1;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .ansContent {
+    width: 100%;
+    padding: 10px 12px 0px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    flex: 1;
+    font-size: 15px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .highlight code {
+    white-space: pre-wrap !important;
+  }
+
+  .tips {
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .status {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #e3e3e3;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
+    span {
+      color: #f37777;
+      margin: 0 20px;
+    }
+  }
+
+  .tipsBox {
+    margin: 20px;
+  }
+}
+
+.newQuestion {
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+  top: -30px;
+  right: 20px;
+  background: rgba(3, 210, 6, 0.692);
+  border-radius: 60px;
+}
+
+.hiddenP {
+  width: 100%;
+  height: 10px;
+}
+.alertBox {
+  display: block;
+  text-align: center;
+  position: fixed !important;
+  top: 50px;
+  left: 50%;
+  width: 550rpx;
+  transform: translateX(-275rpx);
+  z-index: 99999;
+}
+.selectBox {
+  width: 100%;
+  margin: 0rpx auto 20rpx !important;
+}
+.cascader {
+  width: 100%;
+  margin-bottom: 20rpx !important;
+}

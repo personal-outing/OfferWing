@@ -1,0 +1,93 @@
+.expContainer {
+  padding: 10px;
+}
+.expBox {
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  .expTable {
+    max-height: 200px;
+    overflow: auto;
+  }
+
+  .expEmpty {
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .expPositions {
+    display: flex;
+
+    label {
+      height: 30px;
+      line-height: 30px;
+    }
+
+    p {
+      margin: 0 10px;
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 30px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .positionActive {
+      background-color: rgb(255, 139, 22);
+      color: #fff;
+      border: 0;
+    }
+  }
+
+  .expDetailBox {
+    width: 800px;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      white-space: wrap;
+      word-break: break-all;
+    }
+
+    .expDetailQuestion {
+      flex: 1;
+    }
+
+    .expDetailCnt {
+      width: 100px;
+    }
+  }
+
+  .expPagination {
+    margin-top: 20px;
+  }
+}
+.updateBox {
+  p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+}
+.allCompany {
+  width: 800px;
+  margin-top: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  p {
+    min-width: 100px;
+    padding: 0 10px;
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 60px;
+    cursor: pointer;
+  }
+}

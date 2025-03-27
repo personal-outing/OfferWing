@@ -1,0 +1,82 @@
+.introBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .newsBox {
+    ul {
+      padding-left: 20px;
+      p {
+        margin-bottom: 5px 0;
+      }
+    }
+
+    .newsmore {
+      color: #616161;
+      cursor: pointer;
+      margin-bottom: 0;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.notice {
+  background-color: rgb(255, 237, 218);
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  .noticeTitle {
+    color: rgb(255, 153, 0);
+  }
+
+  p {
+    margin: 0;
+  }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50rpx;
+}
+.selectBox {
+  width: 100%;
+  margin: 0rpx auto 20rpx !important;
+}
+.cascader {
+  width: 100%;
+  margin-bottom: 20rpx !important;
+}
+.gotoBtn {
+  width: 100%;
+  display: block !important;
+  max-width: 150px;
+  margin: 30rpx auto;
+  height: 80rpx !important;
+  max-height: 40px !important;
+  border-radius: 80rpx !important;
+}
+.recorderBox {
+  .recorderTitle {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .recorderContent {
+    color: #555;
+  }
+
+  .recorderTime {
+    color: rgb(240, 5, 5);
+  }
+}
+.resumeTips {
+  font-size: 12px;
+  color: #bbb;
+}
+.resumeBox {
+  margin: 10px 0;
+}

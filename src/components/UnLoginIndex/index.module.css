@@ -1,0 +1,346 @@
+.bannerBox {
+  width: 100%;
+  padding: 200px 30px 96px;
+  background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.97) 0%,
+      rgba(240, 247, 255, 0.97) 50%,
+      rgba(235, 245, 255, 0.97) 100%
+    ),
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(15, 144, 231, 0.02) 10px,
+      rgba(15, 144, 231, 0.02) 11px
+    );
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bannerBoxMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}
+
+.bannerBoxLeft {
+  flex: 1;
+  max-width: 600px;
+}
+
+.bannerBoxTitle {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 24px;
+
+  img {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
+  }
+}
+
+.highlight {
+  color: #00e7ff;
+}
+
+.bannerBoxSubtitle {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.bannerBoxDescription {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.bannerBoxVideoBox {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.bannerBoxVideoBtn {
+  width: 100%;
+  max-width: 350px;
+  margin: 36px auto;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 6px;
+  background: #f7f7f7;
+  border-radius: 32px;
+  height: 64px;
+
+  p {
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 12px 28px;
+    margin: 0;
+
+    font-family: PingFangSC, PingFang SC;
+    font-weight: 500;
+    font-size: 22px;
+    color: #595959;
+    line-height: 26px;
+    text-align: right;
+    font-style: normal;
+    border-radius: 29px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.8);
+      color: #0f90e7;
+    }
+  }
+
+  .bannerBoxVideoBtnActive {
+    background: #ffffff;
+    color: #0f90e7;
+    box-shadow: 0 2px 8px rgba(15, 144, 231, 0.2);
+  }
+}
+
+.bannerBoxFeatures {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .bannerBoxFeaturesBox {
+    display: flex;
+    background: #f9fbfc;
+    margin-top: 100px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+
+    font-family: PingFangSC, PingFang SC;
+    font-weight: 500;
+    font-size: 23px;
+    color: #595959;
+    line-height: 32px;
+    padding: 20px 0px;
+
+    .bannerBoxFeaturesBoxItem {
+      position: relative;
+      padding: 0 36px;
+      display: flex;
+      align-items: center;
+      transition: transform 0.3s ease;
+
+      img {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+      }
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+
+      .data {
+        font-weight: 600;
+        background: linear-gradient(90deg, #0f90e7, #00b8ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    .bannerBoxFeaturesBoxItemContent {
+      .data {
+        color: #1091e8;
+      }
+      p {
+        margin-top: 15px;
+      }
+    }
+
+    .bannerBoxFeaturesBoxItem ~ .bannerBoxFeaturesBoxItem::before {
+      content: "";
+      width: 4px;
+      height: 100%;
+      background: #e8e8e8;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .item0 {
+      background-color: #cceff6;
+    }
+
+    .item1 {
+      background-color: #faea73;
+    }
+
+    .item2 {
+      background-color: #f7cedc;
+    }
+  }
+}
+
+.bannerBoxStartBtn {
+  background: linear-gradient(90deg, #7b4bf9 0%, #4bc1f9 100%);
+  border: none;
+  color: white;
+  height: 48px;
+  padding: 0 40px;
+  font-size: 18px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bannerBoxStartBtn:hover {
+  opacity: 0.9;
+}
+
+.noCredit {
+  font-size: 14px;
+  color: #666;
+  margin-top: 12px;
+}
+
+.companyLogos {
+  margin-top: 48px;
+}
+
+.companyTitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.logoContainer {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.bannerBoxRight {
+  flex: 1;
+}
+
+.meetingSoftware {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.meetingSoftwareTitle {
+  font-size: 34px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+
+.meetingSoftwareVersions {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.version {
+  background: linear-gradient(145deg, #ffffff 0%, #f7f8fa 100%);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(15, 144, 231, 0.06);
+  transition: all 0.3s ease;
+}
+
+.version:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(15, 144, 231, 0.1);
+}
+
+.versionLabel {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  padding-left: 16px;
+  border-left: 4px solid #0f90e7;
+}
+
+.softwareGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.softwareItem {
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.softwareItem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.softwareItem img {
+  max-width: 140px;
+  height: auto;
+}
+
+/* 添加媒体查询，在手机屏幕下改为两列布局 */
+@media screen and (max-width: 768px) {
+  .softwareGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .softwareItem img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .meetingSoftware {
+    margin: 40px auto;
+  }
+
+  .meetingSoftwareTitle {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+}

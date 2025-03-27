@@ -1,0 +1,28 @@
+.modeBox {
+  border: 2px solid #222;
+  padding: 10px;
+  border-radius: 10px;
+  width: 50%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+
+  p {
+    font-size: 14px;
+  }
+}
+.macTest {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+
+  .micLength {
+    height: 10px;
+    border-radius: 10px;
+    background-color: #77bdff;
+    margin-left: 5px;
+    margin-bottom: 0;
+  }
+}

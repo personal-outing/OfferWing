@@ -1,0 +1,49 @@
+@media screen and (max-width: 750px) {
+  .logoFont {
+    font-size: 10px;
+    transform: scale(1.1);
+    margin-left: 2px;
+  }
+
+  .topLoginBtn {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .topLoginBtn {
+    font-size: 16px;
+  }
+}
+.layout :global {
+  z-index: 99999;
+  .ant-pro-global-header {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 24rpx 0 6rpx;
+  }
+
+  .ant-layout-content {
+    padding: 0;
+  }
+
+  .ant-layout-header {
+    background-image: url("https://interview-fe-resource.oss-cn-shenzhen.aliyuncs.com/public/newVersion/%E9%A1%B6%E9%83%A8%402x.png");
+    background-size: 100%;
+  }
+
+  .ant-menu-item-selected {
+    color: #fff;
+    border-left: 4px solid #f39555;
+  }
+
+  .ant-menu-title-content {
+    transition: color 0s;
+  }
+}
+
+.avatarBox {
+  margin-top: 20rpx;
+  text-align: center;
+  overflow: hidden;
+}
+

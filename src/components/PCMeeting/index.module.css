@@ -1,0 +1,299 @@
+@media screen and (max-width: 896px) {
+  .pcTalkingContainer {
+    width: 120rpx;
+    height: 100%;
+    font-size: 12px;
+    background-color: #fff;
+    border-bottom: 1px solid #d7d7da;
+    padding: 0rpx 8rpx 10rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .curQuestion {
+    padding: 5px 15px;
+    margin-bottom: 0px;
+    font-size: 8rpx;
+    width: 200rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .introTextBox {
+    font-size: 10rpx;
+    height: 200px;
+    overflow: auto;
+  }
+}
+@media screen and (min-width: 750px) {
+  .pcTalkingContainer {
+    width: 120rpx;
+    height: 100%;
+    font-size: 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #d7d7da;
+    padding: 0rpx 8rpx 10rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .curQuestion {
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 60px;
+    margin: 8px 0;
+    width: 500px;
+    font-size: 15px;
+    white-space: wrap;
+  }
+}
+.pcContainer {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+.pcQuestionContainer {
+  width: 140rpx;
+  height: 100%;
+  background-color: #fff;
+  padding: 10rpx 5rpx 10rpx 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.pcQuestionBox {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.pcAnswerContainer {
+  width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.welcomeBox {
+  font-size: 10rpx;
+  padding: 10px;
+  height: 60px;
+  border-radius: 60px;
+  margin-bottom: 5px;
+}
+.pcAnswerBack {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  font-size: 28rpx;
+  color: #ddd;
+  text-align: center;
+}
+.pcAnswerHeader {
+  height: 60px;
+  padding-top: 10px;
+}
+.pcAnswerBox {
+  overflow: hidden;
+  background-color: #f7f8fc;
+  border-radius: 15px;
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.meetingBtnBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button,
+  div,
+  p,
+  span {
+    font-size: 8rpx;
+  }
+}
+.ansContent {
+  flex: 1;
+  position: relative;
+  word-wrap: break-word;
+  word-break: break-all;
+  z-index: 999;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 15px;
+  font-size: 15px;
+  padding: 5rpx 6rpx 0rpx !important;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  ol {
+    margin-left: 16rpx;
+  }
+}
+.pcAnswerDeal {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.talkingBoxItem {
+  color: #222;
+  margin-top: 6rpx;
+}
+.topDealBtnBox {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  color: #333;
+}
+.meetingBtn {
+  margin: 0 10rpx;
+}
+.startBtn {
+  margin-right: 20px;
+}
+.inputBox {
+  display: flex;
+  width: 90%;
+  margin: 5rpx auto 0;
+
+  input {
+    caret-color: #aaa;
+  }
+}
+.inputItem {
+  height: 20rpx;
+  border-radius: 20rpx !important;
+  font-size: 14px;
+}
+.inputBtn {
+  height: 20rpx !important;
+  border-radius: 20rpx !important;
+  margin-left: 5rpx;
+  font-size: 12px !important;
+  text-align: center;
+  padding: 0 10rpx !important;
+  line-height: 20rpx;
+}
+
+.tagsBox {
+  display: flex;
+
+  .tagsActive {
+    background-color: #f39555;
+    color: #fff;
+    box-sizing: border-box;
+    border: 0;
+  }
+
+  p {
+    margin-right: 5rpx;
+    cursor: pointer;
+    padding: 0rpx 8rpx;
+    border-radius: 6px;
+    font-size: 8rpx;
+    border: 1px solid #b7b7b7;
+    height: 28px;
+    line-height: 28px;
+    white-space: nowrap;
+  }
+}
+
+.interruptBtn {
+  margin-right: 5rpx;
+}
+
+.reportError {
+  font-size: 6rpx;
+  color: #aaa;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.voiceBtn {
+  display: flex;
+  justify-content: center;
+  border: 2px solid rgb(93, 165, 248);
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+
+  img {
+    width: 30px;
+  }
+}
+.talkingPeopleBox {
+  display: flex;
+  justify-content: space-between;
+  font-size: 6rpx;
+
+  .talkingPeople {
+    width: 48%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+
+    .modelName {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .modelDesc {
+      color: #f39555;
+    }
+  }
+}
+.introTextBox {
+  background-color: #ffffffa5;
+  padding: 10px 10px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+
+  p {
+    margin-top: 10px;
+  }
+}
+.referenceCon {
+  line-height: 20rpx;
+  overflow: hidden;
+  padding: 0 5px;
+  background-color: #fff;
+  border-radius: 8px;
+  font-size: 7rpx;
+  margin: 5px 0;
+  max-width: 100rpx;
+
+  p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 6rpx;
+  }
+}
+.referenceBox {
+  display: flex;
+  justify-content: center;
+}
+.topBanner {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 10px;
+  white-space: nowrap;
+}

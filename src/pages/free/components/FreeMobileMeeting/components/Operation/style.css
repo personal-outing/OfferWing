@@ -1,0 +1,11 @@
+.iconAnimation {
+  animation: iconRotate 1.5s infinite;
+}
+@keyframes iconRotate {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}

@@ -1,0 +1,41 @@
+@media screen and (max-width: 750px) {
+  .historyContainer {
+    p,
+    a,
+    span,
+    thead {
+      font-size: 20rpx;
+    }
+  }
+}
+.writinghistory {
+  width: 100%;
+  padding: 10px;
+  overflow-x: auto;
+}
+.historyBox,
+.historyBox2 {
+  overflow: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5px;
+}
+.historyBox2 p {
+  width: 300px;
+  text-align: center;
+}
+.historyBox p {
+  font-weight: bold;
+  width: 300px;
+  text-align: center;
+}
+.questionsBox {
+  .ant-modal-body {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+.questionTable {
+  height: 400px;
+  overflow: auto;
+}

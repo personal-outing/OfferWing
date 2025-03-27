@@ -1,0 +1,88 @@
+@media screen and (max-width: 750px) {
+  .talkContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rpx;
+    padding: 0 5rpx;
+  }
+  .head {
+    width: 80rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    margin: 20rpx 10rpx;
+  }
+  .content {
+    width: 100%;
+    min-height: 42rpx;
+    padding: 18rpx 16rpx 16rpx;
+    background-color: #95ec69;
+    border-radius: 15rpx;
+    overflow: hidden;
+    margin: 20rpx 10rpx;
+    flex: 1;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .ansContent {
+    width: 100%;
+    padding: 16rpx 16rpx 0rpx;
+    background-color: #fff;
+    border-radius: 15rpx;
+    overflow: hidden;
+    margin: 10rpx 10rpx 20rpx;
+    flex: 1;
+    font-size: 15px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .highlight code {
+    white-space: pre-wrap !important;
+  }
+}
+@media screen and (min-width: 750px) {
+  .talkContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 0 5px;
+  }
+  .head {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    margin: 10px 5px;
+  }
+  .content {
+    width: 100%;
+    min-height: 21px;
+    padding: 9px 8px 8px;
+    background-color: #95ec69;
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 10px 5px;
+    flex: 1;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .ansContent {
+    width: 100%;
+    padding: 8px 8px 0px;
+    background-color: #fff;
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 5px 5px 10px;
+    flex: 1;
+    font-size: 15px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .highlight code {
+    white-space: pre-wrap !important;
+  }
+}

@@ -1,0 +1,394 @@
+@media screen and (min-width: 750px) {
+  .chatContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .pcQuestionContainer {
+    width: 120rpx;
+    height: 100%;
+    background-color: #fff;
+    padding: 10rpx 5rpx 10rpx 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  .pcQuestionBox {
+    width: 20%;
+    overflow-y: auto;
+    padding-right: 10px;
+    border-right: 1px solid #e5e5e5;
+  }
+  .pcAnswerBack {
+    font-size: 28rpx;
+    color: #ddd;
+    text-align: center;
+    padding: 10rpx 0;
+    position: absolute;
+    width: 80vw;
+    z-index: 1;
+  }
+  .pcAnswerHeader {
+    height: 60px;
+    padding-top: 10px;
+  }
+  .pcAnswerBox {
+    background-color: #f7f8fc;
+    border-radius: 15px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .ansContent {
+    flex: 1;
+    position: relative;
+    word-wrap: break-word;
+    word-break: break-all;
+    z-index: 999;
+    overflow-y: auto;
+    background-color: #fff;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 5rpx 6rpx 0rpx !important;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  
+    ol {
+      margin-left: 16rpx;
+    }
+  }
+  .talkingBoxItem {
+    color: #222;
+    margin-top: 6rpx;
+  }
+  .chatsContainer {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .talkContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding: 0 5px;
+  }
+  .head {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    margin: 20px 10px;
+  }
+  .content {
+    width: 100%;
+    background-color: #95ec69;
+    border-radius: 15px;
+    padding: 10px;
+    overflow: hidden;
+    margin: 20px 10px;
+    flex: 1;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .ansContent {
+    width: 100%;
+    padding: 10px 12px 0px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    flex: 1;
+    font-size: 15px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .highlight code {
+    white-space: pre-wrap !important;
+  }
+
+  .tips {
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .status {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #e3e3e3;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
+    span {
+      color: #f37777;
+      margin: 0 20px;
+    }
+  }
+
+  .tipsBox {
+    margin: 20px;
+  }
+  .subContainer {
+    overflow: hidden;
+    transition: height 1s;
+  }
+
+  .dealBox {
+    transition: 0.5s height;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 15px;
+  }
+
+  .openBtn {
+    width: 100%;
+    text-align: center;
+    height: 30px;
+
+    img {
+      margin: -10px auto 0;
+      width: 35px;
+    }
+  }
+
+  .btnBox {
+    width: 350px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .meetingBtn {
+    width: 100%;
+    margin: 0 0 10rpx;
+  }
+
+  .interruptBtn {
+    width: 100%;
+    height: 60px !important;
+    margin-top: 10px;
+    background-color: #094f84 !important;
+    border: none !important;
+  }
+
+  .btnBoxs {
+    margin: 10px auto 0;
+  }
+
+  .startBtn {
+    font-size: 16px;
+    display: block;
+    margin: 0px 10px 10px;
+  }
+
+  .iconBox {
+    position: fixed;
+    right: 10px;
+    z-index: 999;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+
+    span {
+      color: #8a8989;
+      font-weight: bold;
+    }
+  }
+
+  .openIcon {
+    font-size: 25px;
+  }
+
+  .fullScreen {
+    width: 100%;
+    height: 240px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+
+  .talkingBox {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    flex: 1;
+    overflow: auto;
+  }
+
+  .talkingBoxItem {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .fullScreenText {
+    padding: 10px;
+    margin-bottom: 0;
+    text-align: center;
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .toQuestion {
+    text-align: right;
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+.talkingItemBox {
+  width: 90%;
+  margin: 15px auto 0;
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+
+  a {
+    margin-left: 10px;
+  }
+}
+
+.talkingItem {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 5px;
+  margin: 0;
+  flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #e6e6e6;
+  border-radius: 14px;
+}
+
+.newQuestion {
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+  top: -30px;
+  right: 20px;
+  background: rgba(3, 210, 6, 0.692);
+  border-radius: 60px;
+}
+
+.hiddenP {
+  width: 100%;
+  height: 10px;
+}
+
+.loading {
+  width: 100%;
+  text-align: center;
+  line-height: 100vh;
+  font-size: 16px;
+}
+.backBtn {
+  position: fixed;
+  cursor: pointer;
+  right: 15px;
+  top: 15px;
+  width: 45px;
+  height: 45px;
+  z-index: 999;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 45px;
+  opacity: 0.7;
+  color: rgb(1, 99, 246);
+
+  img {
+    width: 28px;
+  }
+}
+.saveHistory {
+  width: 80px;
+  height: 30px;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #00bbff;
+  color: #fff;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 9999;
+  cursor: pointer;
+}
+.writingMiddleLeftItem {
+  padding: 10px;
+  background-color: #f7f8fc;
+  margin: 10px 0;
+}
+
+.enlargedImageOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.enlargedImage {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.imageContainer {
+  position: relative;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.enlargeButton {
+  position: absolute;
+  right: 12%;
+  top: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #333;
+}
+
+.enlargeButton:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}

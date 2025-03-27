@@ -1,0 +1,94 @@
+.expContainer {
+  padding: 10px;
+}
+.expBox {
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  .allCompany {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+      margin: 10px;
+      height: 30px;
+      padding: 0 15px;
+      line-height: 30px;
+      border-radius: 30px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+  .expTable {
+    max-height: 200px;
+    overflow: auto;
+  }
+
+  .expEmpty {
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .expPositions {
+    display: flex;
+    margin-bottom: 15px;
+
+    label {
+      height: 30px;
+      line-height: 30px;
+    }
+
+    .expPositionsItem {
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+      overflow-y: hidden;
+      flex: 1;
+    }
+
+    p {
+      margin: 0 10px 0 0;
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 30px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .positionActive {
+      background-color: rgb(255, 139, 22);
+      color: #fff;
+      border: 0;
+    }
+  }
+
+  .expDetailBox {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      white-space: wrap;
+      word-break: break-all;
+    }
+
+    .expDetailQuestion {
+      flex: 1;
+    }
+
+    .expDetailCnt {
+      width: 100px;
+    }
+  }
+
+  .expPagination {
+    margin-top: 20px;
+  }
+}

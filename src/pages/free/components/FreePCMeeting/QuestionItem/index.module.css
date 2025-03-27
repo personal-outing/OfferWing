@@ -1,0 +1,31 @@
+.questioBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pcQuestion,
+.pcQuestionActive {
+  width: 100rpx;
+  border: 1px solid #d7d7da;
+  border-radius: 8px;
+  padding: 2px 6rpx;
+  font-size: 8rpx;
+  box-sizing: border-box;
+  color: #26244c;
+  cursor: pointer;
+  line-height: 12rpx;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.questionIcon {
+  margin: 0 3px 0 8px;
+}
+
+.pcQuestionActive {
+  border: 1px solid #26244c;
+  background-color: antiquewhite;
+}

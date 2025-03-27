@@ -1,0 +1,9 @@
+.helpBox iframe {
+  width: 100%;
+  height: 99%;
+  border: 0;
+}
+.helpBox {
+  text-align: center;
+  height: 100%;
+}

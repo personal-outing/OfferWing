@@ -1,0 +1,586 @@
+[
+  {
+    "id": "layout",
+    "file": "layout.tsx",
+    "componentName": "layout",
+    "layout": true,
+    "exports": [
+      "default"
+    ],
+    "children": [
+      {
+        "path": "free/components/FreeMobileMeeting/components/MarkdownContent",
+        "index": true,
+        "id": "free/components/FreeMobileMeeting/components/MarkdownContent",
+        "parentId": "layout",
+        "file": "free/components/FreeMobileMeeting/components/MarkdownContent/index.tsx",
+        "componentName": "free-components-freemobilemeeting-components-markdowncontent-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "free/components/FreeMobileMeeting/components/Operation",
+        "index": true,
+        "id": "free/components/FreeMobileMeeting/components/Operation",
+        "parentId": "layout",
+        "file": "free/components/FreeMobileMeeting/components/Operation/index.tsx",
+        "componentName": "free-components-freemobilemeeting-components-operation-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "free/components/FreeMobileMeeting/components/Tips",
+        "index": true,
+        "id": "free/components/FreeMobileMeeting/components/Tips",
+        "parentId": "layout",
+        "file": "free/components/FreeMobileMeeting/components/Tips/index.tsx",
+        "componentName": "free-components-freemobilemeeting-components-tips-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "free/components/FreePCMeeting/QuestionItem",
+        "index": true,
+        "id": "free/components/FreePCMeeting/QuestionItem",
+        "parentId": "layout",
+        "file": "free/components/FreePCMeeting/QuestionItem/index.tsx",
+        "componentName": "free-components-freepcmeeting-questionitem-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "free/components/FreeMobileMeeting",
+        "index": true,
+        "id": "free/components/FreeMobileMeeting",
+        "parentId": "layout",
+        "file": "free/components/FreeMobileMeeting/index.tsx",
+        "componentName": "free-components-freemobilemeeting-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "free/components/FreePCMeeting",
+        "index": true,
+        "id": "free/components/FreePCMeeting",
+        "parentId": "layout",
+        "file": "free/components/FreePCMeeting/index.tsx",
+        "componentName": "free-components-freepcmeeting-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "dogbrain/feedbackList",
+        "index": true,
+        "id": "dogbrain/feedbackList",
+        "parentId": "layout",
+        "file": "dogbrain/feedbackList/index.tsx",
+        "componentName": "dogbrain-feedbacklist-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "dogbrain/questionList",
+        "index": true,
+        "id": "dogbrain/questionList",
+        "parentId": "layout",
+        "file": "dogbrain/questionList/index.tsx",
+        "componentName": "dogbrain-questionlist-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "dogbrain/senfeedback",
+        "index": true,
+        "id": "dogbrain/senfeedback",
+        "parentId": "layout",
+        "file": "dogbrain/senfeedback/index.tsx",
+        "componentName": "dogbrain-senfeedback-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "dogbrain/voiceSlice",
+        "index": true,
+        "id": "dogbrain/voiceSlice",
+        "parentId": "layout",
+        "file": "dogbrain/voiceSlice/index.tsx",
+        "componentName": "dogbrain-voiceslice-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "dogbrain/voiceList",
+        "index": true,
+        "id": "dogbrain/voiceList",
+        "parentId": "layout",
+        "file": "dogbrain/voiceList/index.tsx",
+        "componentName": "dogbrain-voicelist-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "dogbrain/voice",
+        "index": true,
+        "id": "dogbrain/voice",
+        "parentId": "layout",
+        "file": "dogbrain/voice/index.tsx",
+        "componentName": "dogbrain-voice-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "writinghistory",
+        "index": true,
+        "id": "writinghistory",
+        "parentId": "layout",
+        "file": "writinghistory/index.tsx",
+        "componentName": "writinghistory-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "writingdetail",
+        "index": true,
+        "id": "writingdetail",
+        "parentId": "layout",
+        "file": "writingdetail/index.tsx",
+        "componentName": "writingdetail-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "refundManage",
+        "index": true,
+        "id": "refundManage",
+        "parentId": "layout",
+        "file": "refundManage/index.tsx",
+        "componentName": "refundmanage-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "meetingtask",
+        "index": true,
+        "id": "meetingtask",
+        "parentId": "layout",
+        "file": "meetingtask/index.tsx",
+        "componentName": "meetingtask-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "myexpdetail",
+        "index": true,
+        "id": "myexpdetail",
+        "parentId": "layout",
+        "file": "myexpdetail/index.tsx",
+        "componentName": "myexpdetail-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "writingtask",
+        "index": true,
+        "id": "writingtask",
+        "parentId": "layout",
+        "file": "writingtask/index.tsx",
+        "componentName": "writingtask-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "experience",
+        "index": true,
+        "id": "experience",
+        "parentId": "layout",
+        "file": "experience/index.tsx",
+        "componentName": "experience-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "algorithm",
+        "index": true,
+        "id": "algorithm",
+        "parentId": "layout",
+        "file": "algorithm/index.tsx",
+        "componentName": "algorithm-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "dashboard",
+        "index": true,
+        "id": "dashboard",
+        "parentId": "layout",
+        "file": "dashboard/index.tsx",
+        "componentName": "dashboard-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "expdetail",
+        "index": true,
+        "id": "expdetail",
+        "parentId": "layout",
+        "file": "expdetail/index.tsx",
+        "componentName": "expdetail-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "shortlink",
+        "index": true,
+        "id": "shortlink",
+        "parentId": "layout",
+        "file": "shortlink/index.tsx",
+        "componentName": "shortlink-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "dogbrain",
+        "index": true,
+        "id": "dogbrain",
+        "parentId": "layout",
+        "file": "dogbrain/index.tsx",
+        "componentName": "dogbrain-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "mocktask",
+        "index": true,
+        "id": "mocktask",
+        "parentId": "layout",
+        "file": "mocktask/index.tsx",
+        "componentName": "mocktask-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "addcoop",
+        "index": true,
+        "id": "addcoop",
+        "parentId": "layout",
+        "file": "addcoop/index.tsx",
+        "componentName": "addcoop-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "history",
+        "index": true,
+        "id": "history",
+        "parentId": "layout",
+        "file": "history/index.tsx",
+        "componentName": "history-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "meeting",
+        "index": true,
+        "id": "meeting",
+        "parentId": "layout",
+        "file": "meeting/index.tsx",
+        "componentName": "meeting-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "writing",
+        "index": true,
+        "id": "writing",
+        "parentId": "layout",
+        "file": "writing/index.tsx",
+        "componentName": "writing-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "custom",
+        "index": true,
+        "id": "custom",
+        "parentId": "layout",
+        "file": "custom/index.tsx",
+        "componentName": "custom-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "detail",
+        "index": true,
+        "id": "detail",
+        "parentId": "layout",
+        "file": "detail/index.tsx",
+        "componentName": "detail-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "joinus",
+        "index": true,
+        "id": "joinus",
+        "parentId": "layout",
+        "file": "joinus/index.tsx",
+        "componentName": "joinus-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "notice",
+        "index": true,
+        "id": "notice",
+        "parentId": "layout",
+        "file": "notice/index.tsx",
+        "componentName": "notice-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "refund",
+        "index": true,
+        "id": "refund",
+        "parentId": "layout",
+        "file": "refund/index.tsx",
+        "componentName": "refund-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "coach",
+        "index": true,
+        "id": "coach",
+        "parentId": "layout",
+        "file": "coach/index.tsx",
+        "componentName": "coach-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "login",
+        "index": true,
+        "id": "login",
+        "parentId": "layout",
+        "file": "login/index.tsx",
+        "componentName": "login-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "setup",
+        "index": true,
+        "id": "setup",
+        "parentId": "layout",
+        "file": "setup/index.tsx",
+        "componentName": "setup-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "share",
+        "index": true,
+        "id": "share",
+        "parentId": "layout",
+        "file": "share/index.tsx",
+        "componentName": "share-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "free",
+        "index": true,
+        "id": "free",
+        "parentId": "layout",
+        "file": "free/index.tsx",
+        "componentName": "free-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "help",
+        "index": true,
+        "id": "help",
+        "parentId": "layout",
+        "file": "help/index.tsx",
+        "componentName": "help-index",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      },
+      {
+        "path": "mock",
+        "index": true,
+        "id": "mock",
+        "parentId": "layout",
+        "file": "mock/index.tsx",
+        "componentName": "mock-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "news",
+        "index": true,
+        "id": "news",
+        "parentId": "layout",
+        "file": "news/index.tsx",
+        "componentName": "news-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "tech",
+        "index": true,
+        "id": "tech",
+        "parentId": "layout",
+        "file": "tech/index.tsx",
+        "componentName": "tech-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "pay",
+        "index": true,
+        "id": "pay",
+        "parentId": "layout",
+        "file": "pay/index.tsx",
+        "componentName": "pay-index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "index": true,
+        "id": "/",
+        "parentId": "layout",
+        "file": "index.tsx",
+        "componentName": "index",
+        "layout": false,
+        "exports": [
+          "default",
+          "pageConfig"
+        ]
+      },
+      {
+        "path": "*",
+        "id": "*",
+        "parentId": "layout",
+        "file": "$.tsx",
+        "componentName": "$",
+        "layout": false,
+        "exports": [
+          "default"
+        ]
+      }
+    ]
+  }
+]

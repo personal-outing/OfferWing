@@ -1,0 +1,14 @@
+.techContainer {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.techCard {
+    cursor: pointer;
+    margin: 10px !important;
+    border-radius: 10px !important;
+    border-color: rgb(242, 214, 179) !important;
+}
+.techMsg {
+    margin-top: 15px;
+}

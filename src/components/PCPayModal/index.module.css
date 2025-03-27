@@ -1,0 +1,97 @@
+.payBox {
+  margin-bottom: 20px;
+}
+
+.payIcon {
+  width: 32x;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.payModalTitle {
+  font-weight: bold;
+}
+
+.payModalWechatTitle {
+  width: 116px;
+  height: 39px;
+}
+
+.payModalQRCode {
+  width: 172px;
+  height: 172px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 172px;
+  color: #000;
+}
+
+.paying-container-statusText {
+  font-size: 20px;
+  margin-bottom: 37px;
+}
+
+.payModalOrderContent {
+  width: 220px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.payModalPayTips {
+  width: 300px;
+  font-size: 12px;
+
+  img {
+    width: 14px;
+    height: 14px;
+    vertical-align: text-top;
+    margin-right: 4px;
+  }
+}
+
+.payModalMainBtn {
+  width: 231px;
+  height: 44px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 44px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(328.06deg, #ffba6a -61.8%, #fffcad 115.77%);
+  margin: 13px 0 0px;
+  color: #000;
+}
+
+.payingContainerStatus {
+  width: 140px;
+  height: 160px;
+  margin-bottom: 50px;
+}
+
+.payingContainerStatusText {
+  font-size: 20px;
+  margin-bottom: 37px;
+}
+
+.payingContainerMainBtn {
+  background: linear-gradient(328.06deg, #ffba6a -61.8%, #fffcad 115.77%);
+  margin: 44px 0 14px;
+  color: #000;
+}
+
+.btnBox {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.payBtn {
+  margin-left: 15px;
+  background: linear-gradient(328.06deg, #ffba6a -61.8%, #fffcad 115.77%);
+  color: #000;
+  border: 0;
+  cursor: pointer;
+}
+.payTitle {
+  margin: 20px 0;
+}

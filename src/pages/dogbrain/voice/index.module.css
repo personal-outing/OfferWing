@@ -1,0 +1,9 @@
+.formItem {
+  display: flex;
+  margin-top: 20px;
+
+  label {
+    width: 50px;
+    text-align: right;
+  }
+}

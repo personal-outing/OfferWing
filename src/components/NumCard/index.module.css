@@ -1,0 +1,25 @@
+.smallCard {
+  width: 49%;
+  background-color: #fafafa;
+  border: 0;
+}
+.smallCardNum {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.smallCardUnit {
+  font-size: 16px;
+}
+.desc {
+  font-size: 12px;
+  color: #999;
+  white-space: wrap;
+  word-break: break-all;
+  margin-bottom: 0;
+
+  p {
+    margin: 0;
+  }
+}

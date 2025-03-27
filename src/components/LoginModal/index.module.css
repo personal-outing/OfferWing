@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.loginModal {
+  overflow: hidden;
+}
+
+.loginModal :global {
+  .ant-modal-content {
+    padding: 20px 4px !important;
+  }
+
+  .ant-pro-form-login-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .ant-pro-form-login-container {
+    padding: 24px 0 !important;
+  }
+
+  @media (max-width: 768px) {
+    & {
+      top: 4px;
+    }
+    .ant-modal-content {
+      padding: 0 !important;
+    }
+
+    .ant-pro-form-login-container {
+      padding-top: 4px !important;
+    }
+    .ant-pro-form-login-desc {
+      margin-bottom: 4px;
+      margin-top: 4px;
+    }
+
+    .ant-pro-form-login-header {
+      height: 30px;
+      line-height: 30px;
+    }
+
+    .ant-pro-form-login-logo {
+      width: 30px;
+      height: 30px;
+    }
+
+    .ant-pro-form-login-title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .ant-alert {
+      padding: 2px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    background-image: url("https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg");
+    background-repeat: no-repeat;
+    background-position: center 110px;
+    background-size: 100%;
+  }
+
+  .content {
+    padding: 32px 0 24px;
+  }
+}
+
+.footer {
+  text-align: center;
+  cursor: pointer;
+}
